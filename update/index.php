@@ -36,7 +36,7 @@
         </tr>
         <?php
        while($rows=mysqli_fetch_assoc($result)){
-         $name=$rows['username'];
+       
 ?>
 
 
@@ -44,7 +44,7 @@
             <td><?php echo  $rows['id'] ;?></td>
             <td><?php echo  $rows['username'] ;?></td>
             <td><?php echo  $rows['email'] ;?></td>
-            <td><a href="update.php?id=<?php echo $rows['id'] ?>">Update</a></td>
+            <td><a href="singlePage.php?id=<?php echo $rows['id'] ?>">Update</a></td>
         </tr>
         <?php      
 
