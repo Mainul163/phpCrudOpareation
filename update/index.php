@@ -25,7 +25,10 @@
        $count=mysqli_num_rows($result);
        
        if($count>0){
+        if(isset($_REQUEST['updateData'])){
 
+            echo "<h3>Data Update</h3>";
+        }
         ?>
     <table style="width:100%">
         <tr>
